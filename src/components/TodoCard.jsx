@@ -3,6 +3,8 @@ import React from 'react'
 
 export default function TodoCard() {
   return (
-    <div>TodoCard</div>
+    <li className='todoItem' key={todoIndex}>{todo}
+        <i class="fa-solid fa-pen-to-square"></i>
+    </li>
   )
 }
