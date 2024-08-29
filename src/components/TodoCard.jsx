@@ -1,10 +1,15 @@
 //rfc = React Functional Component
 import React from 'react'
 
-export default function TodoCard() {
+export default function TodoCard(props) {
+    const {children} = props
   return (
-    <li className='todoItem' key={todoIndex}>{todo}
-        <i class="fa-solid fa-pen-to-square"></i>
+    <li className='todoItem'>
+        {children}
+        <div className='actionsContainer'>
+        <i className="fa-solid fa-pen-to-square"></i>
+        <i className="fa-regular fa-trash-can"></i>
+        </div>
     </li>
   )
 }
